@@ -1,0 +1,700 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multistep Form</title>
+  <link rel="stylesheet" href="./assets/css/bootstrapStyles/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/styles/index.css" />
+  <style>
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <div class="container">
+      <div class="form-content">
+        <div class="progressbar-part">
+          <div class="progress-bar-container">
+            <div class="progress-bar">
+              <div id="progress-bar" class="progress"></div>
+            </div>
+            <div id="progress-text">0%</div>
+          </div>
+        </div>
+        <form id="multistep-form">
+
+
+          <!-- intro-page -->
+          <div class="form-step active" id="step1">
+            <div class="intro-page">
+              <div class="text-content">
+                <h3>Hi User,</h3>
+                <div class="guidance-content">
+                  <div class="text-part">
+                    <p class="secondary-text">This will guide you through setting up your business model for selling
+                      your
+                      services
+                      to
+                      both,
+                      real estate buyers and sellers. You will be asked several questions over the
+                      next
+                      few
+                      screens. Don’t worry if you can’t get your model perfect first time, you’ll be
+                      able
+                      to
+                      change your model over time and get it to generate leads for you! </p>
+                    <p class="secondary-text">Your prospecting clients will be able to find you based on your profile,
+                      compensation,
+                      services and ratings.</p>
+                    <p class="secondary-text">FindAgent.io is a marketplace and empowers real estate agents to earn
+                      money in
+                      numerous
+                      ways
+                      to increase your earning potential! </p>
+                    <h6>Note: If you’re not a broker agent, ensure your broker approves your way of
+                      selling.
+                      This
+                      may require checking your broker contract or getting specific approval. </h6>
+                  </div>
+                  <div class="btn-part">
+                    <button class="primary-btn" type="button" id="next-step-btn">I'M READY, LET'S GO!</button>
+                    <button class="primary-btn" type="button" id="back-btn">TAKE ME BACK</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Set Up Your Services -->
+          <div class="form-step" id="step2">
+            <div class="setup-page">
+              <h3 class="heading-text">User Choose To Set Up Your Services & Model </h3>
+              <div class="setup-content">
+                <div class="row">
+                  <div class="col-6 left-part">
+                    <p class="secondary-text">You can select how you market to buyers.</p>
+                    <p class="secondary-text">The screens will take you through commission structures for property
+                      types, (e.g. fixed %, fixed
+                      amounts) and specific services home buyers need.</p>
+                  </div>
+                  <div class="col-6">
+                    <p class="secondary-text">You can select how you market to sellers.</p>
+                    <p class="secondary-text">The screens will take you through commission structures, fixed %, fixed
+                      amounts and specific
+                      services home sellers need.</p>
+                  </div>
+                </div>
+
+                <div class="row btn-part">
+                  <div class="col-6"><button class="primary-btn" type="button" id="select-buyer">Buyer's
+                      Representation</button></div>
+                  <div class="col-6"><button class="primary-btn" type="button" id="select-seller">Seller's
+                      Representation</button></div>
+                </div>
+              </div>
+              <div class="dashboard-btn-part">
+                <button class="primary-btn" type="button" id="go-to-dashboard-btn">Back to Dashboard</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property Buyers 1 -->
+          <div class="form-step" id="step3">
+
+            <!-- Property Buyers 1 -->
+            <div id="buyer-form">
+              <div class="buyer-page">
+                <h3 class="heading-text">Selling My Services to Property Buyers</h3>
+                <div class="text-part">
+                  <p class="secondary-text">You can select how you sell to buyers including services and compensation.
+                  </p>
+                  <p class="secondary-text">Decide on commission structures, fixed %, fixed amounts and specific
+                    services
+                    home buyers need. </p>
+                  <div class="details-text">
+                    <h5>Details of my buyer representation services: </h5>
+
+                    <div class="checkbox-content">
+                      <div class="ckeckbox-input">
+                        <input id="commissionCheckbox" class="form-check-input mt-0 me-2" type="checkbox" value="">
+                        <h5>Fixed percentage of Buying Price</h5>
+                      </div>
+                      <div class="input-part">
+                        <p class="secondary-text">My minimum commission is </p>
+                        <input type="text" class="input commission-input" disabled>
+                      </div>
+                      <div class="input-part">
+                        <p class="secondary-text">My maximum commission is</p>
+                        <input type="text" class="input commission-input" disabled>
+                      </div>
+                    </div>
+                    <div class="checkbox-content">
+                      <div class="ckeckbox-input">
+                        <input class="form-check-input mt-0 me-2" id="propertiesValue" type="checkbox" value="">
+                        <h5>Fixed amount based on property value (final sales price)</h5>
+                      </div>
+                      <div class="input-part">
+                        <p class="secondary-text">Up to $300,000</p>
+                        <input type="text" placeholder="$" class="input propertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part">
+                        <p class="secondary-text">$300,000 - $500,000</p>
+                        <input type="text" placeholder="$" class="input propertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part ">
+                        <p class="secondary-text">$500,000 - $700,000</p>
+                        <input type="text" placeholder="$" class="input propertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part ">
+                        <p class="secondary-text">$700,000 - $1M</p>
+                        <input type="text" placeholder="$" class="input propertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part ">
+                        <p class="secondary-text">$1M - $1.5M</p>
+                        <input type="text" placeholder="$" class="input propertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part ">
+                        <p class="secondary-text">$1.5M - $2M</p>
+                        <input type="text" placeholder="$" class="input propertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part ">
+                        <p class="secondary-text">$2M+</p>
+                        <input type="text" placeholder="$" class="input propertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part">
+                        <div class="input-checkbox-part">
+                          <input class="form-check-input mt-0 me-2" id="hourlyRate" type="checkbox" value="">
+                          <div class="secondary-text">Hourly Rate</div>
+                        </div>
+                        <input type="text" placeholder="$" class="input hourlyRateInput" disabled>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-part">
+                    <div>
+                      <button class="primary-btn" type="button" id="dynamic-btn">NEXT: SELL SPECIFIC SERVICES</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Property Sellers 2 -->
+            <div id="seller-form">
+              <div class="services-buyers">
+                <h3 class="heading-text">Selling My Services to Property Sellers</h3>
+                <div class="text-part">
+                  <h5>Yes! I’m interested in selling a-la-carte services to buyers for the selected services only. </h5>
+                  <div class="table-part">
+                    <h5>My price range is as follows:</h5>
+                    <table>
+                      <tbody>
+
+                        <tr>
+                          <td class="table-text">
+                            <div class="checkbox-heading"><input id="sellerCheckBox1" class="form-check-input mt-0 me-2"
+                                type="checkbox" value="">
+                              <h5>Property Search and Listing:</h5>
+                            </div>
+                            <ol>
+                              <li>
+                                Helping clients find properties that meet their needs and preferences.
+                              </li>
+                              <li>
+                                Providing access to listings and databases of available properties.
+                              </li>
+                            </ol>
+                          </td>
+                          <td>
+                            <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                              class="input sellerInput1" disabled>
+                          </td>
+                          <td>
+                            <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                              class="input sellerInput1" disabled>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="checkbox-heading"><input id="sellerCheckBox2" class="form-check-input mt-0 me-2"
+                                type="checkbox" value="">
+                              <h5>Market Analysis:</h5>
+                            </div>
+                            <ol>
+                              <li>
+                                Offering insights into market trends, property values, and neighborhood information.
+                              </li>
+                              <li>
+                                Conducting comparative market analysis (CMA) to help buyers understand the value of a
+                                property.
+                              </li>
+                            </ol>
+                          </td>
+                          <td>
+                            <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                              class="input sellerInput2" disabled>
+                          </td>
+                          <td>
+                            <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                              class="input sellerInput2" disabled>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="checkbox-heading"><input id="sellerCheckBox3" class="form-check-input mt-0 me-2"
+                                type="checkbox" value="">
+                              <h5>​Financing Assistance: </h5>
+                            </div>
+                            <ol>
+                              <li>
+                                Assisting buyers in understanding mortgage options and connecting them with lenders.
+                              </li>
+                              <li>
+                                Helping buyers get pre-approved for a mortgage.
+                              </li>
+                            </ol>
+                          </td>
+                          <td>
+                            <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                              class="input sellerInput3" disabled>
+                          </td>
+                          <td>
+                            <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                              class="input sellerInput3" disabled>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="checkbox-heading"><input id="sellerCheckBox4" class="form-check-input mt-0 me-2"
+                                type="checkbox" value="">
+                              <h5>Property Viewing:</h5>
+                            </div>
+                            <ol>
+                              <li>
+                                Scheduling and conducting property tours and open houses.
+                              </li>
+                              <li>
+                                Providing virtual tours and detailed property information.
+                              </li>
+                            </ol>
+                          </td>
+                          <td>
+                            <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                              class="input sellerInput4" disabled>
+                          </td>
+                          <td>
+                            <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                              class="input sellerInput4" disabled>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="checkbox-heading"><input id="sellerCheckBox5" class="form-check-input mt-0 me-2"
+                                type="checkbox" value="">
+                              <h5>Negotiation:</h5>
+                            </div>
+                            <ol>
+                              <li>
+                                Negotiating the purchase price and terms on behalf of the buyer.
+                              </li>
+                              <li>
+                                Ensuring the buyer gets the best possible deal.
+                              </li>
+                            </ol>
+                          </td>
+                          <td>
+                            <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                              class="input sellerInput5" disabled>
+                          </td>
+                          <td>
+                            <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                              class="input sellerInput5" disabled>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="checkbox-heading"><input id="sellerCheckBox6" class="form-check-input mt-0 me-2"
+                                type="checkbox" value="">
+                              <h5>Due Diligence:</h5>
+                            </div>
+                            <ol>
+                              <li>
+                                Coordinating home inspections, appraisals, and other assessments.
+                              </li>
+                              <li>
+                                Helping buyers understand inspection reports and their implications.
+                              </li>
+                            </ol>
+                          </td>
+                          <td>
+                            <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                              class="input sellerInput6" disabled>
+                          </td>
+                          <td>
+                            <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                              class="input sellerInput6" disabled>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            <div class="checkbox-heading"><input id="sellerCheckBox7" class="form-check-input mt-0 me-2"
+                                type="checkbox" value="">
+                              <h5>Closing Services:</h5>
+                            </div>
+                            <ol>
+                              <li>
+                                Assisting with the preparation and review of necessary documents.
+                              </li>
+                              <li>
+                                Coordinating the closing process with all parties involved (e.g., sellers, lenders,
+                                attorneys).
+                              </li>
+                            </ol>
+                          </td>
+                          <td>
+                            <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                              class="input sellerInput7" disabled>
+                          </td>
+                          <td>
+                            <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                              class="input sellerInput7" disabled>
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="btn-part">
+                    <div>
+                      <button class="primary-btn" type="button" id="save-step-btn2">SAVE & SET UP YOUR BUYER
+                        REPRESENTATION MODEL</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property Buyers 2  -->
+          <div id="step4" class="form-step">
+            <div class="services-buyers">
+              <h3 class="heading-text">Selling Specific Services to Property Buyers </h3>
+              <div class="text-part">
+                <h5>Yes! I’m interested in selling a-la-carte services to buyers for the selected services only. </h5>
+                <div class="table-part">
+                  <h5>My price range is as follows:</h5>
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td class="table-text">
+                          <div class="checkbox-heading"><input id="buyerCheckBox1" class="form-check-input mt-0 me-2"
+                              type="checkbox" value="">
+                            <h5>Property Search and Listing:</h5>
+                          </div>
+                          <ol>
+                            <li>
+                              Helping clients find properties that meet their needs and preferences.
+                            </li>
+                            <li>
+                              Providing access to listings and databases of available properties.
+                            </li>
+                          </ol>
+                        </td>
+                        <td>
+                          <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                            class="input buyerInput1" disabled>
+                        </td>
+                        <td>
+                          <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                            class="input buyerInput1" disabled>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="checkbox-heading"><input id="buyerCheckBox2" class="form-check-input mt-0 me-2"
+                              type="checkbox" value="">
+                            <h5>Market Analysis:</h5>
+                          </div>
+                          <ol>
+                            <li>
+                              Offering insights into market trends, property values, and neighborhood information.
+                            </li>
+                            <li>
+                              Conducting comparative market analysis (CMA) to help buyers understand the value of a
+                              property.
+                            </li>
+                          </ol>
+                        </td>
+                        <td>
+                          <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                            class="input buyerInput2" disabled>
+                        </td>
+                        <td>
+                          <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                            class="input buyerInput2" disabled>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <div class="checkbox-heading"><input id="buyerCheckBox3" class="form-check-input mt-0 me-2"
+                              type="checkbox" value="">
+                            <h5>​Financing Assistance: </h5>
+                          </div>
+                          <ol>
+                            <li>
+                              Assisting buyers in understanding mortgage options and connecting them with lenders.
+                            </li>
+                            <li>
+                              Helping buyers get pre-approved for a mortgage.
+                            </li>
+                          </ol>
+                        </td>
+                        <td>
+                          <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                            class="input buyerInput3" disabled>
+                        </td>
+                        <td>
+                          <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                            class="input buyerInput3" disabled>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <div class="checkbox-heading"><input id="buyerCheckBox4" class="form-check-input mt-0 me-2"
+                              type="checkbox" value="">
+                            <h5>Property Viewing:</h5>
+                          </div>
+                          <ol>
+                            <li>
+                              Scheduling and conducting property tours and open houses.
+                            </li>
+                            <li>
+                              Providing virtual tours and detailed property information.
+                            </li>
+                          </ol>
+                        </td>
+                        <td>
+                          <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                            class="input buyerInput4" disabled>
+                        </td>
+                        <td>
+                          <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                            class="input buyerInput4" disabled>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <div class="checkbox-heading"><input id="buyerCheckBox5" class="form-check-input mt-0 me-2"
+                              type="checkbox" value="">
+                            <h5>Negotiation:</h5>
+                          </div>
+                          <ol>
+                            <li>
+                              Negotiating the purchase price and terms on behalf of the buyer.
+                            </li>
+                            <li>
+                              Ensuring the buyer gets the best possible deal.
+                            </li>
+                          </ol>
+                        </td>
+                        <td>
+                          <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                            class="input buyerInput5" disabled>
+                        </td>
+                        <td>
+                          <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                            class="input buyerInput5" disabled>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <div class="checkbox-heading"><input id="buyerCheckBox6" class="form-check-input mt-0 me-2"
+                              type="checkbox" value="">
+                            <h5>Due Diligence:</h5>
+                          </div>
+                          <ol>
+                            <li>
+                              Coordinating home inspections, appraisals, and other assessments.
+                            </li>
+                            <li>
+                              Helping buyers understand inspection reports and their implications.
+                            </li>
+                          </ol>
+                        </td>
+                        <td>
+                          <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                            class="input buyerInput6" disabled>
+                        </td>
+                        <td>
+                          <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                            class="input buyerInput6" disabled>
+                        </td>
+                      </tr>
+
+
+                      <tr>
+                        <td>
+                          <div class="checkbox-heading"><input id="buyerCheckBox7" class="form-check-input mt-0 me-2"
+                              type="checkbox" value="">
+                            <h5>Closing Services:</h5>
+                          </div>
+                          <ol>
+                            <li>
+                              Assisting with the preparation and review of necessary documents.
+                            </li>
+                            <li>
+                              Coordinating the closing process with all parties involved (e.g., sellers, lenders,
+                              attorneys).
+                            </li>
+                          </ol>
+                        </td>
+                        <td>
+                          <div class="input-lable">Min:</div> <input placeholder="$" type="text"
+                            class="input buyerInput7" disabled>
+                        </td>
+                        <td>
+                          <div class="input-lable">Max:</div> <input placeholder="$" type="text"
+                            class="input buyerInput7" disabled>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="btn-part">
+                  <div>
+                    <button class="primary-btn" type="button" id="action-btn">NOW SET UP YOUR SELLER REPRESENTATION
+                      MODEL</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Property Sellers 1 -->
+          <div class="form-step" id="step5">
+            <div id="seller-form">
+              <div class="buyer-page">
+                <h3 class="heading-text">Selling My Services to Property Sellers</h3>
+                <div class="text-part">
+                  <p class="secondary-text">You can select how you sell to sellers including services and compensation.
+                  </p>
+                  <p class="secondary-text">Decide on commission structures, fixed %, fixed amounts and specific
+                    services
+                    home buyers need. </p>
+                  <div class="details-text">
+                    <h5>Details of my buyer representation services: </h5>
+
+                    <div class="checkbox-content">
+                      <div class="ckeckbox-input">
+                        <input id="sellercommissionCheckbox" class="form-check-input mt-0 me-2" type="checkbox"
+                          value="">
+                        <h5>Fixed percentage of Buying Price</h5>
+                      </div>
+                      <div class="input-part">
+                        <p class="secondary-text">My minimum commission is </p>
+                        <input type="text" class="input sellercommission-input" disabled>
+                      </div>
+                      <div class="input-part">
+                        <p class="secondary-text">My maximum commission is</p>
+                        <input type="text" class="input sellercommission-input" disabled>
+                      </div>
+                    </div>
+                    <div class="checkbox-content">
+                      <div class="ckeckbox-input">
+                        <input class="form-check-input mt-0 me-2" id="sellerpropertiesValue" type="checkbox" value="">
+                        <h5>Fixed amount based on property value (final sales price)</h5>
+                      </div>
+                      <div class="input-part">
+                        <p class="secondary-text">Up to $300,000</p>
+                        <input type="text" placeholder="$" class="input sellerpropertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part">
+                        <p class="secondary-text">$300,000 - $500,000</p>
+                        <input type="text" placeholder="$" class="input sellerpropertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part ">
+                        <p class="secondary-text">$500,000 - $700,000</p>
+                        <input type="text" placeholder="$" class="input sellerpropertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part ">
+                        <p class="secondary-text">$700,000 - $1M</p>
+                        <input type="text" placeholder="$" class="input sellerpropertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part ">
+                        <p class="secondary-text">$1M - $1.5M</p>
+                        <input type="text" placeholder="$" class="input sellerpropertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part ">
+                        <p class="secondary-text">$1.5M - $2M</p>
+                        <input type="text" placeholder="$" class="input sellerpropertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part ">
+                        <p class="secondary-text">$2M+</p>
+                        <input type="text" placeholder="$" class="input sellerpropertiesValueAmount" disabled>
+                      </div>
+                      <div class="input-part">
+                        <div class="input-checkbox-part">
+                          <input class="form-check-input mt-0 me-2" id="sellerhourlyRate" type="checkbox" value="">
+                          <div class="secondary-text">Hourly Rate</div>
+                        </div>
+                        <input type="text" placeholder="$" class="input sellerhourlyRateInput" disabled>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="btn-part">
+                    <div>
+                      <button class="primary-btn" type="button" id="save-step-btn1" 
+                        >SAVE & SETUP YOUR SPECIFIC
+                        SERVICES</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <!-- registration-submit -->
+          <div class="form-step" id="step6">
+            <div class="registration-submit">
+              <div class="content">
+                <div class="doneIcon">
+                  <img src="./assets/images/right.svg" alt="">
+                </div>
+                <h3>Saved Successfully</h3>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                  looking readable content of a page when looking at its layout. </p>
+              </div>
+            </div>
+          </div>
+
+          <div id="prev-step-btn">
+            <div id="common-buttons">
+              <button class="primary-btn" type="button">Go Back</button>
+            </div>
+          </div>
+
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/javascript/bootstrap.bundle.min.js"></script>
+  <script src="./assets/javascript/jquery.js"></script>
+  <script src="./assets/javascript/index.js"></script>
+
+</body>
+
+</html>

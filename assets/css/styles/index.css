@@ -1,0 +1,574 @@
+@import url(./fonts.css);
+
+/* common */
+
+.heading-text {
+    font-family: "Montserrat";
+    font-size: 35px;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.secondary-text {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    color: #131842;
+}
+
+h5 {
+    font-family: "Roboto";
+    font-size: 20px;
+    font-weight: 700;
+    color: #131842;
+}
+
+.primary-btn {
+    background-color: #4299e1;
+    padding: 8px 25px;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: 1px solid #4299e1;
+    border-radius: 8px;
+    min-width: 200px;
+    width: auto;
+    height: 60px;
+}
+
+.form-check-input {
+    border: 1px solid gray;
+}
+
+
+.input {
+
+    padding: 5px 10px;
+
+    border-radius: 6px;
+
+    color: black;
+
+    font-size: 16px;
+
+    color: #4d5664;
+
+    border: 1px solid #ced4da;
+
+}
+
+.input:focus {
+
+    color: #212529;
+
+    background-color: #fff;
+
+    border-color: #86b7fe;
+
+    outline: 0;
+
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
+
+}
+
+
+
+/*  */
+
+.form-container {
+    background-color: #e2edf8;
+
+    min-height: 100vh;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+button {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.form-content {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 80px 80px 0 80px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.progressbar-part {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 0px;
+}
+
+.progress-bar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    width: 100%;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 16px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4299e1;
+    width: 0%;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+
+
+#progress-text {
+    margin-left: 15px;
+    color: #4299e1;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}
+
+
+
+
+/* .intro-page */
+.intro-page .guidance-content {
+    margin: 40px;
+}
+
+.intro-page .guidance-content .text-part {
+    margin-bottom: 40px;
+}
+
+.intro-page .text-content h3 {
+    font-family: "Montserrat";
+    font-size: 45px;
+    font-weight: 600;
+    color: #4a5568;
+}
+
+
+
+.intro-page .guidance-content h6 {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    color: #131842;
+}
+
+
+
+.intro-page .guidance-content .btn-part {
+    display: flex;
+    gap: 40px;
+}
+
+
+/* setup-page */
+
+
+.setup-page h3 {
+    margin-bottom: 50px;
+}
+
+.setup-page .btn-part {
+    margin-top: 25px;
+    padding-left: 5px;
+}
+
+.setup-page .row .col-sm-6 {
+    padding: 0 25px;
+}
+
+.setup-page .row .left-part {
+    border-right: 2px solid #E5E1DA;
+}
+
+.setup-page .dashboard-btn-part {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 100px;
+    position: relative;
+    z-index: 100;
+    padding-left: 5px;
+}
+
+
+/* buyer-page */
+.buyer-page .text-part {
+    margin: 40px;
+}
+
+
+.buyer-page .details-text {
+    margin: 50px 0;
+}
+
+.buyer-page h5 {
+    margin-bottom: 0px;
+}
+
+.buyer-page .checkbox-secondary-text {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 400;
+    color: #131842;
+    margin-left: 10px;
+}
+
+.buyer-page .input-checkbox-part {
+    display: flex;
+    align-items: center;
+}
+
+.buyer-page .input-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.buyer-page .ckeckbox-input {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.buyer-page .checkbox-content p {
+    margin-bottom: 0px;
+}
+
+.buyer-page .btn-part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+}
+
+
+/* services-buyers */
+
+.services-buyers .text-part {
+    margin: 40px;
+}
+
+.services-buyers h5 {
+    margin-bottom: 40px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 40px;
+    text-align: left;
+}
+
+.table-text {
+    min-width: 315px;
+}
+
+table .input {
+    width: 100%;
+    min-width: 135px;
+}
+
+.services-buyers .checkbox-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.services-buyers .checkbox-heading h5 {
+    margin-bottom: 0px;
+}
+
+.services-buyers .table-part li {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    color: #131842;
+}
+
+.services-buyers .input-lable {
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 500;
+    color: #131842;
+}
+
+
+.services-buyers .btn-part {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+}
+
+#multistep-form {
+    position: relative;
+}
+
+
+#common-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+#prev-step-btn{
+    position: sticky;
+    bottom: -2px;
+    right: 0%;
+    width: 100%;
+}
+
+/* .fixed-btn {
+    position: sticky;
+    bottom: -2px;
+    right: 0%;
+    width: 100%;
+} */
+
+.registration-submit {
+    background-color: #e2edf8;
+    padding: 80px;
+    border-radius: 10px;
+
+}
+
+.registration-submit .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration-submit .doneIcon {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #06D001;
+}
+
+.registration-submit .doneIcon img {
+    width: 35px;
+    height: 35px;
+}
+
+.registration-submit h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #4a5568;
+    margin: 25px 0;
+}
+
+.registration-submit p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.registration-submit button {
+    margin-top: 30px;
+}
+
+@media(max-width:1025px) {
+    .table-part {
+        overflow: scroll;
+        padding-left: 5px;
+    }
+}
+
+@media(max-width:992px) {
+    .registration-submit p {
+        text-align: center;
+    }
+
+ 
+    .form-content {
+        padding: 80px 20px 0 20px;
+        box-shadow: none;
+    }
+
+    .intro-page .text-content h3 {
+        font-size: 40px;
+    }
+
+    .progress-bar-container {
+        margin-bottom: 70px;
+    }
+
+    .intro-page .guidance-content {
+        margin: 40px 0 0 0;
+    }
+
+    .primary-btn {
+        padding: 6px 20px;
+        font-size: 14px;
+        border-radius: 6px;
+        min-width: 175px;
+        height: 54px;
+    }
+
+    .setup-page h3 {
+        margin-bottom: 40px;
+    }
+
+    .heading-text {
+        font-size: 32px;
+    }
+
+    .buyer-page .input-part {
+        width: 100%;
+    }
+
+    .buyer-page .text-part {
+        margin: 40px 0 0 0;
+    }
+
+    .services-buyers .text-part {
+        margin: 40px 0 0 0;
+    }
+
+    td {
+        padding: 20px;
+    }
+    .form-container {
+
+        background-color: #FFFFFF;
+    }
+
+}
+
+@media(max-width:768px) {
+    h5 {
+        font-size: 18px;
+    }
+
+    .services-buyers .checkbox-heading {
+        margin-bottom: 16px;
+    }
+    .table-text {
+        min-width: 270px;
+    }
+    #prev-step-btn {
+        position: unset;
+    }
+    .registration-submit {
+        padding: 40px;
+    }
+}
+
+@media(max-width:520px) {
+    .secondary-text {
+        font-size: 16px;
+    }
+    .intro-page .guidance-content {
+        margin: 25px 0 0 0;
+    }
+    .intro-page .guidance-content .btn-part {
+        gap: 20px;
+    }
+    .intro-page .guidance-content .btn-part .primary-btn {
+        padding: 6px 12px;
+        min-width: 130px;
+    }
+    .heading-text {
+        font-size: 27px;
+    }
+    .form-content {
+        padding: 35px 20px 0 20px;
+    }
+    .setup-page h3 {
+        margin-bottom: 30px;
+    }
+    .setup-content .secondary-text {
+        font-size: 14px;
+    }
+    .setup-content .primary-btn {
+        padding: 6px 10px;
+        font-size: 14px;
+        min-width: 135px;
+    }
+    .input{
+        max-width: 130px;
+    }
+    table h5{
+        font-size: 16px;
+    }
+    .services-buyers .table-part li {
+        font-size: 14px;
+    }
+    td {
+        padding: 12px;
+    }
+    .registration-submit{
+        padding: 30px;
+    }
+    .registration-submit .doneIcon {
+        width: 50px;
+        height: 50px;
+    }
+    .registration-submit .doneIcon img{
+        width: 25px;
+        height: 25px;
+    }
+    .registration-submit h3 {
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .registration-submit p {
+        font-size: 16px;
+    }
+    .buyer-page .btn-part {
+        justify-content: end;
+    }
+    .services-buyers .btn-part {
+        justify-content: end;
+    }
+}
+
